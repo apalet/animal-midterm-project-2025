@@ -1,0 +1,207 @@
+/* Add 2 new font styles from serif family: Cinzel and Namun Myeonjo. Via @import from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nanum+Myeongjo&display=swap');
+
+/* Base page defaults */
+body {
+    background-color: FFF0F0;
+    font-family: "Nanum Myeongjo", serif;
+    font-size: medium;
+}
+
+/* Top navigation bar */
+.topnav {
+    position: fixed;
+    width: 80%;
+    padding: 15px;
+    background-color: #841617;
+    color: white;
+    border-radius: 10px;
+    font-family: "Cinzel", sans-serif;
+    font-weight: bold;
+    margin-left: 8%;
+    margin-right: 8%;
+    box-shadow: 0px 1px 4px 2px rgb(0, 0, 0, 0.5);
+}
+
+/* Specific link style for topnav anchors to avoid affecting all <a> elements */
+.atop {
+    color: white;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    text-decoration: none;
+}
+
+/* Header branding/label spacing in nav */
+span {
+    font-size: 1.5em;
+    padding-left: 2vw;
+    padding-right: 20vw;
+}
+
+/* Main page title */
+h1 {
+    font-size: 2.5em;
+    padding: 20px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* Section subtitles */
+h2 {
+    font-size: 1.8em;
+    padding: 10px;
+    text-align: center;
+}
+
+h1::first-letter, h2::first-letter {
+    color: #841617;
+}
+
+h1, h2, h3 {
+    font-family: "Cinzel", serif;
+}
+
+/* Paragraph text alignment */
+p {
+    text-align: justify;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+/* Last paragraph of the page */
+p:last-of-type {
+    padding-bottom: 4%;
+}
+
+/* Alternating section background (even sections) */
+.even {
+    background-color: white;
+    /* Add cloud pattern using a transparent image*/
+    background-image: url("assets/images/cloudsopasity.png"); 
+    background-repeat: repeat;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(211, 211, 211, 0.25);
+}
+
+/* Alternating section background (odd sections) */
+.odd {
+    background-color: #fff8f8;
+    background-image: url("assets/images/cloudsopasity.png");
+    background-repeat: repeat;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(211, 211, 211, 0.25);
+}
+
+/* Constrain main content width */
+.container {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Default image sizing */
+img {
+    max-width: 500px;
+    height: auto;
+    box-shadow: 0px 1px 2px 2px rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+#transparent {
+    box-shadow: none;
+}
+
+/* Combined styling for all media container types */
+.sound-container, .media-container, .image-container, .iframe-container { 
+    text-align: center;
+    color: rgb(49, 49, 49);   
+    font-size: 0.8em;
+    padding-bottom: 4%;
+}
+
+/* Override text alignment for sound containers to left-align audio controls */
+.sound-container {
+    text-align: left;
+}
+
+/* Caption text color */
+figcaption {
+    color:black;
+    padding-top: 8px;
+}
+
+/* Default iframe appearance */
+iframe {
+    border: none;
+  }
+
+/* Footer area */
+.bottom {
+    padding: 20px;
+    color: rgb(49, 49, 49);   
+    font-style: oblique;
+}
+
+/* Styled button-like footer links with shadow and border */
+.abottom { 
+    color: black;
+    font-weight: bolder;
+    font-size: 1.2em;
+    font-style: normal;
+    text-decoration: none;
+    /* Allows width/height control while staying inline with text flow, enables padding and margins to work properly */
+    display: inline-block; 
+    background-color: #fff8f8;
+    border: 2px solid black;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-left: 75%;
+    /* Add subtle drop shadow: 0px horizontal, 4px vertical offset, 6px blur radius, 10% black opacity */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 1s ease;
+}
+
+/* Style definition list terms with dark background and rounded corners */
+dl > dt {
+    display: inline-block; 
+    background-color:rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Style the first definition term with OU Crimson background to distinguish it */
+dt:first-of-type {
+    background-color: rgb(132, 22, 23, 0.7);
+}
+
+/* Style definition list descriptions with padding for better readability */
+dl > dd {
+    padding: 5px 10px;
+}
+
+.atop:hover {
+    background-color:#fff8f8;
+    color: #841617;
+    border-radius: 5px;
+}
+
+.abottom:hover {
+    background-color:#841617;
+    color: #fff8f8;
+    border-color: #fff8f8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
+}
+
+a {
+    color:#510c0d;
+}
+
+a:hover {
+    color: #F08080;
+}
