@@ -3,7 +3,7 @@
 
 /* Base page defaults */
 body {
-    background-color: FFF0F0;
+    background-color: #FFF0F0;
     font-family: "Nanum Myeongjo", serif;
     font-size: medium;
 }
@@ -53,10 +53,12 @@ h2 {
     text-align: center;
 }
 
+/* add crimson color at the first letter of h1 and h2 */
 h1::first-letter, h2::first-letter {
     color: #841617;
 }
 
+/* special font "cinzel" for header */
 h1, h2, h3 {
     font-family: "Cinzel", serif;
 }
@@ -111,6 +113,7 @@ img {
     border-radius: 10px;
 }
 
+/* taking away shadows from transparent images */
 #transparent {
     box-shadow: none;
 }
@@ -184,12 +187,14 @@ dl > dd {
     padding: 5px 10px;
 }
 
+/* adding some hovers for the top nav href links*/
 .atop:hover {
     background-color:#fff8f8;
     color: #841617;
     border-radius: 5px;
 }
 
+/* adding some hovers for the .abottom href link*/
 .abottom:hover {
     background-color:#841617;
     color: #fff8f8;
@@ -198,10 +203,12 @@ dl > dd {
     transform: scale(1.2);
 }
 
+/* add a color from the palette for the "a" elements */
 a {
     color:#510c0d;
 }
 
+/* add color for the hover "a" elements */
 a:hover {
     color: #F08080;
 }
