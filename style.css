@@ -63,6 +63,14 @@ h1, h2, h3 {
     font-family: "Cinzel", serif;
 }
 
+h3 {
+    margin-top: 40px;
+}
+
+.soundheader {
+    text-align: center;
+}
+
 /* Paragraph text alignment */
 p {
     text-align: justify;
@@ -124,11 +132,6 @@ img {
     color: rgb(49, 49, 49);   
     font-size: 0.8em;
     padding-bottom: 4%;
-}
-
-/* Override text alignment for sound containers to left-align audio controls */
-.sound-container {
-    text-align: left;
 }
 
 /* Caption text color */
