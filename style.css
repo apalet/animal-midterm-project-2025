@@ -168,7 +168,7 @@ iframe {
     margin-left: 75%;
     /* Add subtle drop shadow: 0px horizontal, 4px vertical offset, 6px blur radius, 10% black opacity */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 1s ease;
+    transition: transform 0.5s ease;
 }
 
 /* Style definition list terms with dark background and rounded corners */
@@ -203,7 +203,7 @@ dl > dd {
     color: #fff8f8;
     border-color: #fff8f8;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* add a color from the palette for the "a" elements */
