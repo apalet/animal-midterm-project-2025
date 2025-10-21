@@ -20,6 +20,10 @@
 
 7. replace new colors for old ones (no much different but help to standardized the new palette)
 
+8. abottom:hover changed - transition from 1sec to 0.5sec and scale from 1.2 to 1.1
+
+9. substituting special characters: quotation marks for $quote;
+
 
 Things i wish to fix if i have more time:
 
